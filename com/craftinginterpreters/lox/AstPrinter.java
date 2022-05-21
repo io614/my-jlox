@@ -42,6 +42,7 @@ public class AstPrinter implements Expr.Visitor<String> {
     }
 
     public static void main(String[] args) {
+        // Artificial syntax tree
         Expr expression = new Expr.Binary(
                 new Expr.Unary(
                         new Token(TokenType.MINUS, "-", null, 1),
